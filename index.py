@@ -1,2 +1,8 @@
-for i in range (10): 
-	print("Hello world")
+
+import pandas as pd
+
+sp_500_tickers = pd.read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")
+sp_500_tickers = sp_500_tickers[0]
+ticker_list = sp_500_tickers["Symbol"].values.tolist()
+
+print(ticker_list)
