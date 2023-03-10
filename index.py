@@ -14,10 +14,7 @@ import pandas as pd
 import concurrent.futures as cf
 from yahoofinancials import YahooFinancials
 
-import re
-import ast
-import time
-import requests
-from bs4 import BeautifulSoup
+for i in range (5):
+	print("Hello world")
 
 #mathieu 
